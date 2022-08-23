@@ -28,7 +28,7 @@ export default {
             .then(soundscapes => {
                     this.soundscapeNames = soundscapes;
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
 
         getDefaultSoundscapeId()
@@ -36,14 +36,14 @@ export default {
                     this.defaultSoundscapeName = name;
                     console.log('got default soundscape name ', this.defaultSoundscapeName);
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
 
         getAudioSinks()
             .then(sinks => {
                     this.sinks = sinks;
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
     },
     watch: {
@@ -54,7 +54,7 @@ export default {
                     .then(() => {
                         console.log('Saved sink levels successfully');
                     }, error => {
-                        alert(error);
+                        console.log(error);
                     });
             },
             deep: true

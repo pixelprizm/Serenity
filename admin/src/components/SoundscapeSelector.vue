@@ -23,7 +23,7 @@ export default {
         .then(list => {
           this.soundscapeNames = list;
         }, error => {
-          alert(error);
+          console.log(error);
         });
     },
     components: {
@@ -35,7 +35,7 @@ export default {
                     this.$emit('load-soundscape', soundscape);
                     this.selectedSoundscapeName = null;
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
         }
     }

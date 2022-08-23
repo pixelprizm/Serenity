@@ -73,7 +73,7 @@ export default {
                 this.selectedColor = rgbToHex(swarmSettings.color[0] * 255, swarmSettings.color[1] * 255, swarmSettings.color[2] * 255);
                 this.blinkPattern = swarmSettings.pattern.split('').map(c => (c === '1') ? true : false);
             }, error => {
-                alert(error);
+                console.log(error);
             });
     },
     components: {
@@ -93,7 +93,7 @@ export default {
                 .then(() => {
                     console.log(`Saved swarm LED settings`);
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
         }
     }

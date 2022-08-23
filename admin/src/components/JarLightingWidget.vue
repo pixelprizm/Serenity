@@ -29,7 +29,7 @@ export default {
                 this.backgroundPatternNames = lists.backgrounds.map(obj => obj.name);
                 this.foregroundPatternNames = lists.foregrounds;
             }, error => {
-                alert(error);
+                console.log(error);
             });
 
         // fetch current jar LED settings
@@ -39,7 +39,7 @@ export default {
                 this.selectedBackgroundPattern = settings.background;
                 this.intensity = settings.intensity;
             }, error => {
-                alert(error);
+                console.log(error);
             });
     },
     data () {
@@ -57,7 +57,7 @@ export default {
                 .then(() => {
                     console.log(`Saved jar LED settings`);
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
         }
     }

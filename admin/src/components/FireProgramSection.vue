@@ -25,16 +25,16 @@ export default {
         .then(list => {
           this.fireProgramNames = list;
         }, error => {
-          alert(error);
+          console.log(error);
         });
     },
     methods: {
         onSubmit: function() {
           runFireProgram(this.selectedFireProgram)
             .then(() => {
-              alert(`Started fire program ${this.selectedFireProgram}`);
+              console.log(`Started fire program ${this.selectedFireProgram}`);
             }, error => {
-              alert(error);
+              console.log(error);
             });
         }
     }

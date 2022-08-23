@@ -86,14 +86,14 @@ export default {
             .then(soundscape => {
                     this.soundscape = soundscape;
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
 
         getAudioBackgroundNames()
             .then(names => {
                     this.backgroundNames = names;
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
     },
     components: {
@@ -111,9 +111,9 @@ export default {
         saveNewSoundscape() {
             saveNewAudioSoundscape(this.newSoundscapeName, this.soundscape)
                 .then(zones => {
-                        alert(`Saved new soundscape ${this.newSoundscapeName} successfully`);
+                        console.log(`Saved new soundscape ${this.newSoundscapeName} successfully`);
                     }, error => {
-                        alert(error);
+                        console.log(error);
                     });
         },
         updateVolume(updateObj) {
@@ -131,7 +131,7 @@ export default {
                     .then(zones => {
                         console.log('Updated current soundscape successfully: ' + JSON.stringify(this.soundscape));
                     }, error => {
-                        alert(error);
+                        console.log(error);
                     });
             },
             deep: true

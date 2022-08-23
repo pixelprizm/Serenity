@@ -49,7 +49,7 @@ export default {
             this.active = false;
           }, 300)
         }, error => {
-          alert(error);
+          console.log(error);
         });
     }
   }

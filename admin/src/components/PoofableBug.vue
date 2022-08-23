@@ -39,7 +39,7 @@ export default {
                 .then(() => {
                     console.log(`Fired all poofers on ${this.bugName}`);
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
         }
     }

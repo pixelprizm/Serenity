@@ -79,7 +79,7 @@ export default {
             .then(list => {
                 this.fireProgramNames = list;
             }, error => {
-                alert(error);
+                console.log(error);
             });
     },
     methods: {
@@ -92,19 +92,19 @@ export default {
 
             deleteFirePattern(this.fireProgramToDelete)
                 .then(() => {
-                    alert(`Deleted fire program ${this.fireProgramToDelete}`);
+                    console.log(`Deleted fire program ${this.fireProgramToDelete}`);
                     this.fireProgramToDelete = null;
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
         },
         saveFireProgram() {
             createNewFirePattern(this.newFireProgramName, this.poofDuration, this.currentProgramPatterns)
                 .then(() => {
-                    alert(`Saved new fire program ${this.newFireProgramName}`);
+                    console.log(`Saved new fire program ${this.newFireProgramName}`);
                     this.newFireProgramName = null;
                 }, error => {
-                    alert(error);
+                    console.log(error);
                 });
         }
     }
