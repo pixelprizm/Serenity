@@ -66,8 +66,10 @@ export default {
     beforeMount() {
         // fill the current program with blanks for all poofer patterns
         // TODO: share these lists with the other places that use similar / the same lists
-        const bugNames = ['Metric', 'Brazen', 'John'];
-        const pooferNames = ['butt1', 'butt2', 'butt3', 'butt4', 'butt5', 'butt6', 'antenna1', 'antenna2'];
+        // const bugNames = ['Metric', 'Brazen', 'John'];
+        const bugNames = ['elders'];
+        // const pooferNames = ['butt1', 'butt2', 'butt3', 'butt4', 'butt5', 'butt6', 'antenna1', 'antenna2'];
+        const pooferNames = ['1i', '1o', '2i', '2o', '3i', '3o', '4i', '4o', '5i', '5o', '6i', '6o', '7i', '7o', '8i', '8o', '9i', '9o' ];
         bugNames.forEach(bugName => {
             this.$set(this.currentProgramPatterns, bugName, {});
             pooferNames.forEach(pooferName => {

@@ -56,22 +56,45 @@ const createNewFirePattern = function(programName, poofDuration, patternsObject)
     // so we need to convert our pattern format to its pattern format
     let eventsArr = [];
 
-    const bugNames = ['Metric', 'John', 'Brazen'];
+    // const bugNames = ['Metric', 'John', 'Brazen'];
+    const bugNames = ['elders'];
     const bugNamesToNumbersMap = {
-        Metric: 1,
-        John: 2,
-        Brazen: 3
+        elders: 1,
+        // Metric: 1,
+        // John: 2,
+        // Brazen: 3
     };
-    const pooferNames = ['butt1', 'butt2', 'butt3', 'butt4', 'butt5', 'butt6', 'antenna1', 'antenna2'];
+    // const pooferNames = ['butt1', 'butt2', 'butt3', 'butt4', 'butt5', 'butt6', 'antenna1', 'antenna2'];
+    const pooferNames = ['1i', '1o', '2i', '2o', '3i', '3o', '4i', '4o', '5i', '5o', '6i', '6o', '7i', '7o', '8i', '8o', '9i', '9o' ];
+    // const pooferNamesToNumbersMap = {
+    //     butt1: 'T1',
+    //     butt2: 'T2',
+    //     butt3: 'T3',
+    //     butt4: 'T4',
+    //     butt5: 'T5',
+    //     butt6: 'T6',
+    //     antenna1: 'A1',
+    //     antenna2: 'A2',
+    // };
     const pooferNamesToNumbersMap = {
-        butt1: 'T1',
-        butt2: 'T2',
-        butt3: 'T3',
-        butt4: 'T4',
-        butt5: 'T5',
-        butt6: 'T6',
-        antenna1: 'A1',
-        antenna2: 'A2',
+        '1i': 'E1i',
+        '1o': 'E1o',
+        '2i': 'E2i',
+        '2o': 'E2o',
+        '3i': 'E3i',
+        '3o': 'E3o',
+        '4i': 'E4i',
+        '4o': 'E4o',
+        '5i': 'E5i',
+        '5o': 'E5o',
+        '6i': 'E6i',
+        '6o': 'E6o',
+        '7i': 'E7i',
+        '7o': 'E7o',
+        '8i': 'E8i',
+        '8o': 'E8o',
+        '9i': 'E9i',
+        '9o': 'E9o',
     };
 
     bugNames.forEach(bugName => {
